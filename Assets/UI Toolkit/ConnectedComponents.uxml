@@ -1,0 +1,36 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/ConnectedComponentsStyle.uss?fileID=7433441132597879392&amp;guid=7dae56f54814c8d43a9ddbb5763565e3&amp;type=3#ConnectedComponentsStyle" />
+    <ui:VisualElement name="MainContainer" style="flex-grow: 1; flex-direction: row; justify-content: space-between; align-items: flex-start; color: rgb(255, 255, 255);">
+        <ui:VisualElement name="MenuContainer" class="container" style="justify-content: space-around; width: 25%;">
+            <ui:Button text="Go Back" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Back" class="button" style="width: 80%; background-color: rgb(150, 60, 50);" />
+            <ui:VisualElement name="DataDisplayer" style="align-self: center; width: 80%; justify-content: center; align-items: center;">
+                <ui:VisualElement name="V" style="flex-grow: 1; flex-direction: row;">
+                    <ui:Label tabindex="-1" text="Vertices: " parse-escape-sequences="true" display-tooltip-when-elided="true" name="VerticesText" class="text" />
+                    <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Vertices" class="text" />
+                </ui:VisualElement>
+                <ui:VisualElement name="F" style="flex-grow: 1; flex-direction: row;">
+                    <ui:Label tabindex="-1" text="Faces: " parse-escape-sequences="true" display-tooltip-when-elided="true" name="FaceText" class="text" />
+                    <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Faces" class="text" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="Buttons" style="align-self: center; flex-wrap: nowrap; justify-content: space-between; align-items: center; width: 80%; height: 30%;">
+                <ui:Button text="Select File ..." parse-escape-sequences="true" display-tooltip-when-elided="true" name="Select" class="button" style="background-color: rgb(100, 160, 220);" />
+                <ui:Button text="Scan !" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Submit" class="button" style="background-color: rgb(80, 180, 100);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="CCDisplayer" style="flex-direction: column; justify-content: space-between; align-self: center; align-items: center;">
+                <ui:Label tabindex="-1" text="Connected Components: " parse-escape-sequences="true" display-tooltip-when-elided="true" name="CCText" class="text" style="align-self: center; font-size: 28px;" />
+                <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="CC" class="text" style="align-self: center;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="Controls" style="flex-grow: initial; width: 17.5%; height: 35%; flex-direction: column; flex-wrap: nowrap; align-items: center; justify-content: space-around; -unity-font-style: bold; font-size: 24px; -unity-text-align: middle-center; background-color: rgba(80, 110, 130, 0.75); padding-top: 32px; padding-right: 32px; padding-bottom: 32px; padding-left: 32px; margin-top: 16px; margin-right: 16px; margin-bottom: 16px; margin-left: 16px;">
+            <ui:Label tabindex="-1" text="Show/Hide Menu: Tab" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+            <ui:Label tabindex="-1" text="Forward: W - ↑" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+            <ui:Label tabindex="-1" text="Backwards: S - ↓" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+            <ui:Label tabindex="-1" text="Left: A - ←" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+            <ui:Label tabindex="-1" text="Right: D - →" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+            <ui:Label tabindex="-1" text="Shift: Sprint" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+            <ui:Label tabindex="-1" text="Space: Go Up" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+            <ui:Label tabindex="-1" text="LCtrl: Go Down" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
